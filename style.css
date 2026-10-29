@@ -166,3 +166,17 @@ h3 { font-size: 1.1rem; }
 @media (prefers-reduced-motion: reduce) {
   .aurora span { animation: none; }
 }
+
+/* Logos entreprises & écoles : tuile blanche pour rester lisible en mode sombre */
+.logo { flex: none; display: grid; place-items: center; width: 96px; height: 52px; padding: 6px 8px; border-radius: 10px; background: #fff; border: 1px solid var(--line); }
+.logo img { display: block; max-width: 100%; max-height: 38px; object-fit: contain; }
+.logo--txt { font-family: var(--mono); font-weight: 500; font-size: 0.95rem; color: var(--accent); background: var(--accent-soft); }
+.job__head { display: flex; gap: 1rem; align-items: center; margin-bottom: 0.4rem; }
+.job__head .job__org { margin-bottom: 0; }
+.card > .logo { margin-bottom: 0.6rem; }
+
+.trust { padding: 2.5rem 0; border-bottom: 1px solid var(--line); }
+.trust__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.9rem; }
+.trust .logo { width: 150px; height: 72px; padding: 10px 14px; }
+.trust .logo img { max-height: 50px; }
+@media (max-width: 520px) { .trust .logo { width: 128px; height: 62px; } }
